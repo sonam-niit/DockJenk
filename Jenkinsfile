@@ -46,7 +46,7 @@ pipeline {
             steps {
 
                 // Run Maven Wrapper Commands
-                sh "docker run -d -p 9090:9090 myapp"
+                sh "docker run -d -p 8085:8085 myapp"
 
                 echo 'Deploy the App with Docker'
             }
