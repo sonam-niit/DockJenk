@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/sonam-niit/DockJenk.git'
+                git branch: 'main', url: 'https://github.com/sonam-niit/DockJenk.git'
 
                 // Run Maven Wrapper Commands
                 sh "./mvnw compile"
